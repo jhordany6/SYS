@@ -63,6 +63,7 @@
                 </li>
               </ul>
             </li>
+            -->
             <li class="nav-item">
               <a href="<?= $base_url ?>pages/proyectos/index.php" class="nav-link">
                 <i class="nav-icon fas fa-hammer"></i>
@@ -71,6 +72,7 @@
                 </p>
               </a>
             </li>
+           <!--
             <li class="nav-item">
               <a href="<?= $base_url ?>pages/productos/indexProductos.php" class="nav-link">
                 <i class="nav-icon fas fa-box-open"></i>

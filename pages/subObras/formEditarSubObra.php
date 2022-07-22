@@ -63,9 +63,9 @@ $fetchUsuario = mysqli_fetch_row($queryUsuario);
 				foreach ($fetchDetalles as $fetchDetalle) {
 					echo '<div class="form-group col-md-6" id="divProductoEditar'.$contador.'">';
 					if($contador < 2){
-						echo '<label for="recipient-name" class="form-control-label">Producto <i style="color: darkorange">*</i></label>';
+						echo '<label for="recipient-name" class="form-control-label">Tarea <i style="color: darkorange">*</i></label>';
 					}
-					echo '<select class="form-control" name="producto[]" id="productoEditar'.$contador.'" required="true">';
+					echo '<select class="form-control" name="tarea[]" id="productoEditar'.$contador.'" required="true">';
 					echo '<option value="">Selecciona una opción</option>';
 					$sqlProductos = "SELECT id_producto,codigo,nombre FROM tbl_producto;";
 					$queryProductos = $db->query($sqlProductos);
@@ -139,7 +139,7 @@ $fetchUsuario = mysqli_fetch_row($queryUsuario);
 
 		let selectProductoCrear = copiadivSelectProducto.cloneNode(true);
 		selectProductoCrear.setAttribute("id", "productoEditar"+contadorDetalleEditar);
-		selectProductoCrear.setAttribute("name", "producto[]");
+		selectProductoCrear.setAttribute("name", "tarea[]");
 		selectProductoCrear.value = "";
 
 		let inputCantidadCrear = copiadivInputCantidad.cloneNode(true);

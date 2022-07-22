@@ -8,8 +8,8 @@ $queryCliente = mysqli_query($conn, $sqlCliente);
 $fetchCliente = mysqli_fetch_row($queryCliente);
 
 ?>
-<form name="editarProducto" id="editarProducto" method="POST" onsubmit="return enviarRegistroClienteEditar(event);" action="procesarCliente.php?accion=actualizar&id=<?= $_REQUEST["idu"] ?>">
-	<h4 class="text-center mb-4"> Producto </h4>
+<form name="editarTarea" id="editarTarea" method="POST" onsubmit="return enviarRegistroClienteEditar(event);" action="procesarCliente.php?accion=actualizar&id=<?= $_REQUEST["idu"] ?>">
+	<h4 class="text-center mb-4"> Tarea </h4>
 	<div class="row">
 		<div class="form-group col-md-6">
 			<label for="message-text" class="form-control-label">Primer Nombre <i style="color: darkorange">*</i></label>

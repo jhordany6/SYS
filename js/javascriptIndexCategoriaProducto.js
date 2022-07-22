@@ -4,7 +4,7 @@ function enviarRegistroCategoriaProducto(evt) {
     if (nombre.value == "") {
         swal({
             title: "Estas seguro que deseas continuar?",
-            text: "No has ingresado el nombre de la categoria producto!",
+            text: "No has ingresado el nombre de la categoria tarea!",
             icon: "warning",
             buttons: true,
             dangerMode: true,
@@ -29,7 +29,7 @@ function enviarRegistroCategoriaProductoEditar(evt) {
         if (nombre.value == "" && descripcion.value == "") {
             swal({
                 title: "Estas seguro que deseas continuar?",
-                text: "No has ingresado el nombre o la descripcion de la categoria producto",
+                text: "No has ingresado el nombre o la descripcion de la categoria tarea",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,

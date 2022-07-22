@@ -22,7 +22,7 @@ function enviarRegistroContratista(evt) {
 		if(descripcion.value == ""){
 			swal({
 				title: "Estas seguro que deseas continuar?",
-				text: "No has ingresado la descripcion de tu producto!",
+				text: "No has ingresado la descripcion de tu tarea!",
 				icon: "warning",
 				buttons: true,
 				dangerMode: true,
@@ -42,7 +42,7 @@ function enviarRegistroContratista(evt) {
 		}
 	}
 }
-function enviarRegistroProductoEditar(evt) {
+function enviarRegistroTareaEditar(evt) {
 	evt.preventDefault();// Evitamos el submit en nuevos navegadores
 	let unidadMedida = document.getElementById("unidadMedidaEditar");
 	let categoriaProducto = document.getElementById("categoriaProductoEditar");
@@ -66,7 +66,7 @@ function enviarRegistroProductoEditar(evt) {
 		if(descripcion.value == ""){
 			swal({
 				title: "Estas seguro que deseas continuar?",
-				text: "No has ingresado la descripcion de tu producto!",
+				text: "No has ingresado la descripcion de tu tarea!",
 				icon: "warning",
 				buttons: true,
 				dangerMode: true,
@@ -76,13 +76,13 @@ function enviarRegistroProductoEditar(evt) {
 					swal("Procesando informacion!", {
 						timer: 3000,
 					});
-					document.getElementById("editarProducto").submit();
+					document.getElementById("editarTarea").submit();
 				} else {
 					swal("Termina de llenar tu formulario");
 				}
 			});
 		}else{
-			document.getElementById("editarProducto").submit();
+			document.getElementById("editarTarea").submit();
 		}
 	}
 }

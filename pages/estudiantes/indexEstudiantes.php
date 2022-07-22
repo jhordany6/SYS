@@ -91,7 +91,7 @@
 
           <div class="modal-body modal-xl">
             <div class="content">
-              <form method="POST" name="registrarProducto" id="registrarProducto" action="procesarEstudiantes.php?accion=crear">
+              <form method="POST" name="registrarTarea" id="registrarTarea" action="procesarEstudiantes.php?accion=crear">
                 <div class="row">
                   <div class="form-group col-md-12">
                     <label for="recipient-name" class="form-control-label">Salario <i style="color: darkorange">*</i></label>

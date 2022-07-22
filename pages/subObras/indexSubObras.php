@@ -137,8 +137,8 @@
                 <div class="form-group col-md-12">
                   <div class="row" id="detalle">
                     <div class="form-group col-md-6" id="divProducto1">
-                      <label for="recipient-name" class="form-control-label">Producto <i style="color: darkorange">*</i></label>
-                      <select class="form-control" name="producto[]" id="producto1" required="true">
+                      <label for="recipient-name" class="form-control-label">Tarea <i style="color: darkorange">*</i></label>
+                      <select class="form-control" name="tarea[]" id="tarea1" required="true">
                         <option value="">Selecciona una opción</option>
                         <?php 
                         $sqlProducto = "SELECT id_producto,codigo,nombre FROM tbl_producto;";
@@ -238,8 +238,8 @@
 
     
     let selectProductoCrear = copiadivSelectProducto.cloneNode(true);
-    selectProductoCrear.setAttribute("id", "producto"+contadorDetalle);
-    selectProductoCrear.setAttribute("name", "producto[]");
+    selectProductoCrear.setAttribute("id", "tarea"+contadorDetalle);
+    selectProductoCrear.setAttribute("name", "tarea[]");
 
     
     let inputCantidadCrear = copiadivInputCantidad.cloneNode(true);
@@ -328,7 +328,7 @@
     swal("Excelente!", "Sub-Obra eliminado correctamente!", "success");
   }else if(resquest == "existe"){
     swal({
-      title: "El producto ya existe",
+      title: "La tarea ya existe",
       icon: "warning",
       buttons: true,
       dangerMode: true,

@@ -13,7 +13,7 @@ $params = filter_input_array(INPUT_POST);
 //define index of column
 $columns = array(
 	  0 => 'codigo',
-    1 => 'producto',
+    1 => 'tarea',
     2 => 'costo',
     3 => 'unidadMedida',
     4 => 'categoria'
@@ -81,13 +81,13 @@ foreach ($data as $key => $val) {
         $dataTwo[$key][4] = $val[5];
         $dataTwo[$key][5] = '
         &nbsp;
-        <a href="#" style="color:#000;" data-toggle="modal" data-target="#modalModificarUsuario" onClick="fnEditarProducto(\'' . $val[0] . '\');">
+        <a href="#" style="color:#000;" data-toggle="modal" data-target="#modalModificarUsuario" onClick="fnEditarTarea(\'' . $val[0] . '\');">
         <span data-toggle="tooltip" title="Editar usuario" class="fas fa-pencil-alt"></span>
         </a>
         ';
         $dataTwo[$key][5] .= '
         &nbsp;
-        <a href="#" style="color:#000;" data-toggle="modal" data-target="#modalEliminarUsuario" onClick="fnEliminarProducto(\'' . $val[0] . '\');">
+        <a href="#" style="color:#000;" data-toggle="modal" data-target="#modalEliminarUsuario" onClick="fnEliminarTarea(\'' . $val[0] . '\');">
         <span data-toggle="tooltip" title="Eliminar usuario" class="fa fa-times"></span>
         </a>';
 

@@ -25,7 +25,7 @@
               </ol>
             </div><!-- /.col -->
             <div class="col-sm-12 text-center">
-              <h1>LISTADO DE PRODUCTOS</h1>
+              <h1>LISTADO DE TAREAS</h1>
             </div>
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -54,11 +54,11 @@
                     </div>
                     <div class="box-body">
                       <div class="container-fluid">
-                        <table id="listProductos" class="table-light table-bordered table-striped table-hover"  width="98%" cellspacing="0">
+                        <table id="listTareas" class="table-light table-bordered table-striped table-hover"  width="98%" cellspacing="0">
                           <thead>
                             <tr>
                               <th>CODIGO</th>
-                              <th>PRODUCTO</th>
+                              <th>TAREA</th>
                               <th>COSTO</th>
                               <th>UNIDAD DE MEDIDA</th>
                               <th>CATEGORIA</th>
@@ -86,13 +86,13 @@
       <div class="modal-content">
         <div class="modal-header header-modal-sany" style="background-color: #6F42C1">
           <div class="container-fluid">
-            <h4 class="modal-title " style="text-align: center; color: black">REGISTRAR UN NUEVO PRODUCTO</h4>
+            <h4 class="modal-title " style="text-align: center; color: black">REGISTRAR UNA NUEVA TAREA</h4>
           </div>
         </div>
 
         <div class="modal-body modal-xl">
           <div class="content">
-            <form method="POST" name="registrarProducto" id="registrarProducto" onsubmit="return enviarRegistroProducto(event);" action="procesarProducto.php?accion=crear">
+            <form method="POST" name="registrarTarea" id="registrarTarea" onsubmit="return enviarRegistroTarea(event);" action="procesarProducto.php?accion=crear">
               <div class="row">
                 <div class="form-group col-md-4">
                   <label for="recipient-name" class="form-control-label">Codigo <i style="color: darkorange">*</i></label>
@@ -125,7 +125,7 @@
                   </select>
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="recipient-name" class="form-control-label">Categoria del producto <i style="color: darkorange">*</i></label>
+                  <label for="recipient-name" class="form-control-label">Categoria del tarea <i style="color: darkorange">*</i></label>
                   <select class="form-control" name="categoriaProducto" id="categoriaProducto" required>
                     <option value="0">Selecciona una opción</option>
                     <?php 
@@ -224,7 +224,7 @@
     return $string;
   }
   ?>
-  <?php  echo cargarDataTables('listProductos', 'responseProductos'); ?>
+  <?php  echo cargarDataTables('listTareas', 'responseTareas'); ?>
   <?php 
   if(isset($_GET['r'])) {
     echo 'let resquest ="'.$_GET['r'].'";';
@@ -233,15 +233,15 @@
   }
   ?>
   if(resquest == "success"){
-    swal("Excelente!", "Producto almacenado correctamente!", "success");
+    swal("Excelente!", "Tarea almacenada correctamente!", "success");
   }else if(resquest == "editado"){
-    swal("Excelente!", "Producto editado correctamente!", "success");
+    swal("Excelente!", "Tarea editada correctamente!", "success");
   }else if(resquest == "eliminado"){
-    swal("Excelente!", "Producto eliminado correctamente!", "success");
+    swal("Excelente!", "Tarea eliminada correctamente!", "success");
   }else if (resquest == "noeliminado") {
     swal("Error!", "Lo siento no puede eliminar este registro,\n esta siendo usado en algun otro lugar!", "error");
   }
-  function fnEditarProducto(idUsuario) {
+  function fnEditarTarea(idUsuario) {
     $.ajax({
       url: "formEditarProducto.php",
       type: "POST",
@@ -252,9 +252,9 @@
       }
     });
   }
- function fnEliminarProducto(idUsuario){
+ function fnEliminarTarea(idUsuario){
   swal({
-    title: "Estas seguro que deseas eliminar este producto?",
+    title: "Estas seguro que deseas eliminar este tarea?",
     icon: "warning",
     buttons: true,
     dangerMode: true,

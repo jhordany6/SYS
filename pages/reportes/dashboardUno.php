@@ -87,7 +87,7 @@ $fetchDatosGenerales = mysqli_fetch_row($queryDatosGenerales);
                                     <div class="inner">
                                       <h3><?= $fetchDatosGenerales[3] ?></h3>
 
-                                      <p>PRODUCTOS REGISTRADOS</p>
+                                      <p>TAREAS REGISTRADAS</p>
                                     </div>
                                     <div class="icon">
                                       <i class="fas fa-box-open"></i>

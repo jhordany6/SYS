@@ -26,7 +26,7 @@ switch ($accion) {
 		$crearSubObraEncabezado->execute();
 
 		$arrayProducto = array();
-		$arrayProducto = $_POST["producto"];
+		$arrayProducto = $_POST["tarea"];
 		$arraycantidad = array();
 		$arraycantidad = $_POST["cantidad"];
 		$sizeArray = sizeof($arrayProducto);
@@ -61,7 +61,7 @@ switch ($accion) {
 		$actualizarSubObra->execute([$codigo, $nombre, $descripcion, $costo, $unidadMedida, $codigoViejo]);
 
 		$arrayProducto = array();
-		$arrayProducto = $_POST["producto"];
+		$arrayProducto = $_POST["tarea"];
 		$arraycantidad = array();
 		$arraycantidad = $_POST["cantidad"];
 		$sizeArray = sizeof($arrayProducto);
@@ -91,7 +91,7 @@ switch ($accion) {
 			$actualizarSubObra->execute([$codigo, $nombre, $descripcion, $costo, $unidadMedida, $codigoViejo]);
 
 			$arrayProducto = array();
-			$arrayProducto = $_POST["producto"];
+			$arrayProducto = $_POST["tarea"];
 			$arraycantidad = array();
 			$arraycantidad = $_POST["cantidad"];
 			$sizeArray = sizeof($arrayProducto);

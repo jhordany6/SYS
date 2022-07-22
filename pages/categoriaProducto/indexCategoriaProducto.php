@@ -26,7 +26,7 @@
               </ol>
             </div><!-- /.col -->
             <div class="col-sm-12 text-center">
-              <h1>LISTADO DE CATEGORIAS PRODUCTO</h1>
+              <h1>LISTADO DE CATEGORIAS TAREA</h1>
             </div>
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -83,7 +83,7 @@
         <div class="modal-content">
           <div class="modal-header header-modal-sany" style="background-color: #6F42C1">
             <div class="container-fluid">
-              <h4 class="modal-title " style="text-align: center; color: black">REGISTRAR UNA NUEVA CATEGORIA PRODUCTO</h4>
+              <h4 class="modal-title " style="text-align: center; color: black">REGISTRAR UNA NUEVA CATEGORIA TAREA</h4>
             </div>
           </div>
 
@@ -117,7 +117,7 @@
           <div class="modal-header header-modal-sany" style="background-color: #6F42C1">
             <div class="row">
               <div class="form-group col-md-12 text-center" style="margin-bottom: -8px;background-color: #6F42C1">
-                <h4 class="modal-title">MODIFICAR DATOS DE LA CATEGORIA PRODUCTO</h4>
+                <h4 class="modal-title">MODIFICAR DATOS DE LA CATEGORIA TAREA</h4>
               </div>
             </div>
           </div>
@@ -190,11 +190,11 @@
     }
     ?>
     if (resquest == "success") {
-      swal("Excelente!", "Categoria Producto almacenado correctamente!", "success");
+      swal("Excelente!", "Categoria Tarea almacenado correctamente!", "success");
     } else if (resquest == "editado") {
-      swal("Excelente!", "Categoria Producto editado correctamente!", "success");
+      swal("Excelente!", "Categoria Tarea editado correctamente!", "success");
     } else if (resquest == "eliminado") {
-      swal("Excelente!", "Categoria Producto eliminado correctamente!", "success");
+      swal("Excelente!", "Categoria Tarea eliminado correctamente!", "success");
     }else if (resquest == "noeliminado") {
       swal("Error!", "Lo siento no puede eliminar este registro,\n esta siendo usado en algun otro lugar!", "error");
     }
@@ -215,7 +215,7 @@
 
     function fnEliminarCategoriaProducto(idUsuario) {
       swal({
-          title: "Estas seguro que deseas eliminar este Categoria Producto?",
+          title: "Estas seguro que deseas eliminar este Categoria Tarea?",
           icon: "warning",
           buttons: true,
           dangerMode: true,

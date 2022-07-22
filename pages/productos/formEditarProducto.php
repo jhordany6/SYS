@@ -8,8 +8,8 @@ $queryUsuario = mysqli_query($conn, $sqlUsuario);
 $fetchUsuario = mysqli_fetch_row($queryUsuario);
 
 ?>
-<form name="editarProducto" id="editarProducto" method="POST" onsubmit="return enviarRegistroProductoEditar(event);" action="procesarProducto.php?accion=actualizar&id=<?= $_REQUEST["idu"] ?>">
-	<h4 class="text-center mb-4"> Producto </h4>
+<form name="editarTarea" id="editarTarea" method="POST" onsubmit="return enviarRegistroTareaEditar(event);" action="procesarProducto.php?accion=actualizar&id=<?= $_REQUEST["idu"] ?>">
+	<h4 class="text-center mb-4"> Tarea </h4>
 	<div class="row">
 		<div class="form-group col-md-4">
 			<label for="message-text" class="form-control-label">Codigo <i style="color: darkorange">*</i></label>
@@ -44,7 +44,7 @@ $fetchUsuario = mysqli_fetch_row($queryUsuario);
 			</select>
 		</div>
 		<div class="form-group col-md-4">
-			<label for="recipient-name" class="form-control-label">Categoria producto <i style="color: darkorange">*</i></label>
+			<label for="recipient-name" class="form-control-label">Categoria tarea <i style="color: darkorange">*</i></label>
 			<select class="form-control" name="categoriaProducto" id="categoriaProductoEditar" required="true">
 				<option value="0">Selecciona una opción</option>
 				<?php

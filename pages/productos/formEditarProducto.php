@@ -24,8 +24,8 @@ $fetchUsuario = mysqli_fetch_row($queryUsuario);
 			<input type="text" class="form-control" name="descripcion" id="descripcionEditar" value="<?= $fetchUsuario[3] ?>"/>
 		</div>
 		<div class="form-group col-md-4">
-			<label for="message-text" class="form-control-label">costo <i style="color: darkorange">*</i></label>
-			<input type="number" class="form-control" name="costo" id="costoEditar" required="true" value="<?= $fetchUsuario[4] ?>"/>
+			<label for="message-text" class="form-control-label">Horas <i style="color: darkorange">*</i></label>
+			<input type="number" class="form-control" name="horas" id="horasEditar" required="true" value="<?= $fetchUsuario[4] ?>"/>
 		</div>
 		<div class="form-group col-md-4">
 			<label for="recipient-name" class="form-control-label">Unidad de medida <i style="color: darkorange">*</i></label>

@@ -38,7 +38,6 @@
           <div class="box">
             <div class="box-header" style="margin-bottom: 63px;">
               <div class="row">
-
                 <div class="col-sm-2 col-sm-offset-10 ml-auto float-right" style="margin-right: 15px">
                   <a href="JavaScript:void(0)" class="btn btn-purple btn-block mb-4" data-toggle="modal" data-target="#modalNuevaSubObra" >
                     <i class="fa fa-fw fa-plus" style="margin-right:15px;"></i><b>Nuevo</b>
@@ -59,7 +58,7 @@
                             <tr>
                               <th>CODIGO</th>
                               <th>TAREA</th>
-                              <th>COSTO</th>
+                              <th>HORAS</th>
                               <th>UNIDAD DE MEDIDA</th>
                               <th>CATEGORIA</th>
                               <th>ACCIONES</th>
@@ -107,8 +106,8 @@
                   <input  type="text" class="form-control" name="descripcion" id="descripcion" minlength="1" maxlength="100" autocomplete="off"/>
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="recipient-name" class="form-control-label">Costo <i style="color: darkorange">*</i></label>
-                  <input  type="number" class="form-control" name="costo" id="costo" required="true" min="1" max="10000000000" autocomplete="off"/>
+                  <label for="recipient-name" class="form-control-label">Horas <i style="color: darkorange">*</i></label>
+                  <input  type="number" class="form-control" name="hora" id="hora" required="true" min="1" max="10000000000" autocomplete="off"/>
                 </div>
                 <div class="form-group col-md-4">
                   <label for="recipient-name" class="form-control-label">Unidad de medida <i style="color: darkorange">*</i></label>

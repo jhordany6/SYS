@@ -14,7 +14,7 @@ $params = filter_input_array(INPUT_POST);
 $columns = array(
 	  0 => 'codigo',
     1 => 'tarea',
-    2 => 'costo',
+    2 => 'hora',
     3 => 'unidadMedida',
     4 => 'categoria'
 );

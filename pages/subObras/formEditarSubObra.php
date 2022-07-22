@@ -137,10 +137,10 @@ $fetchUsuario = mysqli_fetch_row($queryUsuario);
 		divEliminar.setAttribute("id", "divEliminarEditar"+contadorDetalleEditar);
 
 
-		let selectProductoCrear = copiadivSelectProducto.cloneNode(true);
-		selectProductoCrear.setAttribute("id", "productoEditar"+contadorDetalleEditar);
-		selectProductoCrear.setAttribute("name", "tarea[]");
-		selectProductoCrear.value = "";
+		let selectTareaCrear = copiadivSelectProducto.cloneNode(true);
+		selectTareaCrear.setAttribute("id", "productoEditar"+contadorDetalleEditar);
+		selectTareaCrear.setAttribute("name", "tarea[]");
+		selectTareaCrear.value = "";
 
 		let inputCantidadCrear = copiadivInputCantidad.cloneNode(true);
 		inputCantidadCrear.setAttribute("id", "cantidadEditar"+contadorDetalleEditar);
@@ -153,7 +153,7 @@ $fetchUsuario = mysqli_fetch_row($queryUsuario);
 		btnEliminarCrear.setAttribute("onclick", "eliminarDetalleEditar("+contadorDetalleEditar+")");
 
 		divPadre.appendChild(divProducto);
-		divProducto.appendChild(selectProductoCrear);
+		divProducto.appendChild(selectTareaCrear);
 
 		divPadre.appendChild(divCantidad);
 		divCantidad.appendChild(inputCantidadCrear);

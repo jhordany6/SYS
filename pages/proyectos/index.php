@@ -407,9 +407,9 @@
       divEliminar.setAttribute("id", "divEliminar" + contadorDetalle);
 
 
-      let selectProductoCrear = copiadivSelectSubObra.cloneNode(true);
-      selectProductoCrear.setAttribute("id", "subObra" + contadorDetalle);
-      selectProductoCrear.setAttribute("name", "subObra[]");
+      let selectTareaCrear = copiadivSelectSubObra.cloneNode(true);
+      selectTareaCrear.setAttribute("id", "subObra" + contadorDetalle);
+      selectTareaCrear.setAttribute("name", "subObra[]");
 
 
       let inputCantidadCrear = copiadivInputCantidad.cloneNode(true);
@@ -423,7 +423,7 @@
       btnEliminarCrear.setAttribute("onclick", "eliminarDetalle(" + contadorDetalle + ")");
 
       divPadre.appendChild(divSubObra);
-      divSubObra.appendChild(selectProductoCrear);
+      divSubObra.appendChild(selectTareaCrear);
 
       divPadre.appendChild(divCantidad);
       divCantidad.appendChild(inputCantidadCrear);
@@ -475,9 +475,9 @@
       divEliminarEstudiante.setAttribute("id", "divEliminarEstudiante" + contadorDetalleEstudiante);
 
 
-      let selectProductoCrearEstudiante = copiadivSelectSubObraEstudiante.cloneNode(true);
-      selectProductoCrearEstudiante.setAttribute("id", "Estudiante" + contadorDetalleEstudiante);
-      selectProductoCrearEstudiante.setAttribute("name", "Estudiante[]");
+      let selectTareaCrearEstudiante = copiadivSelectSubObraEstudiante.cloneNode(true);
+      selectTareaCrearEstudiante.setAttribute("id", "Estudiante" + contadorDetalleEstudiante);
+      selectTareaCrearEstudiante.setAttribute("name", "Estudiante[]");
 
 
       let inputCantidadCrearEstudiante = copiadivInputCantidadEstudiante.cloneNode(true);
@@ -491,7 +491,7 @@
       btnEliminarCrearEstudiante.setAttribute("onclick", "eliminarDetalleEstudiante(" + contadorDetalleEstudiante + ")");
 
       divPadreEstudiante.appendChild(divSubObraEstudiante);
-      divSubObraEstudiante.appendChild(selectProductoCrearEstudiante);
+      divSubObraEstudiante.appendChild(selectTareaCrearEstudiante);
 
       divPadreEstudiante.appendChild(divCantidadEstudiante);
       divCantidadEstudiante.appendChild(inputCantidadCrearEstudiante);

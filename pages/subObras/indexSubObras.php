@@ -237,9 +237,9 @@
     divEliminar.setAttribute("id", "divEliminar"+contadorDetalle);
 
     
-    let selectProductoCrear = copiadivSelectProducto.cloneNode(true);
-    selectProductoCrear.setAttribute("id", "tarea"+contadorDetalle);
-    selectProductoCrear.setAttribute("name", "tarea[]");
+    let selectTareaCrear = copiadivSelectProducto.cloneNode(true);
+    selectTareaCrear.setAttribute("id", "tarea"+contadorDetalle);
+    selectTareaCrear.setAttribute("name", "tarea[]");
 
     
     let inputCantidadCrear = copiadivInputCantidad.cloneNode(true);
@@ -253,7 +253,7 @@
     btnEliminarCrear.setAttribute("onclick", "eliminarDetalle("+contadorDetalle+")");
 
     divPadre.appendChild(divProducto);
-    divProducto.appendChild(selectProductoCrear);
+    divProducto.appendChild(selectTareaCrear);
 
     divPadre.appendChild(divCantidad);
     divCantidad.appendChild(inputCantidadCrear);

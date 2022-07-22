@@ -72,15 +72,15 @@
                 </p>
               </a>
             </li>
-           <!--
             <li class="nav-item">
               <a href="<?= $base_url ?>pages/productos/indexProductos.php" class="nav-link">
                 <i class="nav-icon fas fa-box-open"></i>
                 <p>
-                  Productos
+                  Tarea
                 </p>
               </a>
             </li>
+            <!--
             <li class="nav-item">
               <a href="<?= $base_url ?>pages/categoriaProducto/indexCategoriaProducto.php" class="nav-link">
                 <i class="nav-icon fas fa-clone"></i>
